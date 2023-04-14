@@ -2,12 +2,10 @@
 layout: default
 ---
 
-# Protein Prompt Engineering 
-
-Prompt engineering is a relatively new discipline to effectively use the knowledge stored in Large Language Models. In contrast to natural language, protein prompts can differ in various forms. In what follows, we present a list of possible prompts that can be leveraged for large protein language models.
+**Prompt engineering is a relatively new discipline to effectively use the knowledge stored in Large Language Models. In contrast to natural language, protein prompts can differ in various forms. In what follows, we present a list of possible prompts that can be leveraged for large protein language models.**
 
 
-#### 1. Dedicated Sentinel Tokens as Prompts
+## 1. Dedicated Sentinel Tokens as Prompts
 
 > **[Multi-level Protein Structure Pre-training via Prompt Learning](https://openreview.net/forum?id=XGagtiJ8XC&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2023%2FConference%2FAuthors%23your-submissions)), ICLR 2023**
 > 
@@ -28,16 +26,16 @@ We also visualized the utilization of each layer by different prompts:
 
 The skip weights are similar in the bottom layers `[1-13]` across all prompts. The primary structural information is mainly acquired by the middle layers `[14-29]`, whereas the tertiary and quaternary structural information is more acquired by the top layers `[30-33]`.
 
-#### 2. Aligned Properties as Prompts
+## 2. Aligned Properties as Prompts
 
 The protein generation task can be divided into the generation task of constraining the whole protein and the generation task of constraining each amino acid. The latter is a more rigorous and more concerned generative paradigm for protein research (e.g. inverse folding, proteins that conform to the arrangement of hydrophilic and hydrophobic intervals). 
 
 
-#### 3. Natural language as Prompts
+## 3. Natural language as Prompts
 
 Natural language has demonstrated concept-transferring ability, i.e., transferring semantic concepts from one language to a different one, code or image, in training with other modalities. In order to enable extraction of relevant information from protein LLMs using language, we can augment the protein training data with texts, such that the connection between protein sequences and text descriptions of protein properties (e.g., natural language, XML tables or  knowledge graphs)
 
-#### 4. Experimental Installation as Prompts
+## 4. Experimental Installation as Prompts
 
 Experimental installations play an important role in protein generation. They limit and guide the generation of protein, including the guidance of the certain protein, the limitation of the type of protein and the limitation of the process of generating protein. Therefore, it can be cast as one type of prompt in protein generation, bridging the gap between the universal large model and the downstream tasks for the specific-protein generation. The experimental installations include the facilities used in the laboratory and some automatic machines (e.g., iBioFoundry and iChemFoundry).
 
