@@ -10,7 +10,7 @@ layout: default
 > **[Multi-level Protein Structure Pre-training via Prompt Learning](https://openreview.net/forum?id=XGagtiJ8XC&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2023%2FConference%2FAuthors%23your-submissions)), ICLR 2023**
 > 
 
-Protein structures can be divided into four levels: The primal is the protein sequence consisting of amino acids; the second refers to the local folded structures (e.g., $\alpha$ helix and $\beta$ pleated sheet); the tertiary describes the natural folded three-dimensional structure; and the quaternary is a protein multimer comprising multiple polypeptides. A protein can rely on different structure levels to implement its specific functions, including reserving a piece of the sequence, manifesting the whole 3D structure as conformational elements, or even cooperating with other proteins. Therefore, when predicting protein functions, it is vital to flexibly utilize multi-level structural information.
+Protein structures can be divided into four levels: The primal is the protein sequence consisting of amino acids; the second refers to the local folded structures (e.g., α-helix and β-pleated sheet); the tertiary describes the natural folded three-dimensional structure; and the quaternary is a protein multimer comprising multiple polypeptides. A protein can rely on different structure levels to implement its specific functions, including reserving a piece of the sequence, manifesting the whole 3D structure as conformational elements, or even cooperating with other proteins. Therefore, when predicting protein functions, it is vital to flexibly utilize multi-level structural information.
 
 In our ICLR’23 paper, we associate protein structure information to prompts, and flexibly use multi-level structural information through the prompt engineering. Here, we propose three dedicated sentinel tokens `<MLM>`, `<CRD>`, `<PPI>` to associate primary, tertiary, and quaternary structural information.
 
@@ -33,7 +33,7 @@ The protein generation task can be divided into the generation task of constrain
 
 ### 3. Natural language as Prompts
 
-Natural language has demonstrated concept-transferring ability, i.e., transferring semantic concepts from one language to a different one, code or image, in training with other modalities. In order to enable extraction of relevant information from protein LLMs using language, we can augment the protein training data with texts, such that the connection between protein sequences and text descriptions of protein properties (e.g., natural language, XML tables or  knowledge graphs)
+Natural language has demonstrated concept-transferring ability, i.e., transferring semantic concepts from one language to a different one, code or image, in training with other modalities. In order to enable extraction of relevant information from protein LLMs using language, we can augment the protein training data with texts, such that the connection between protein sequences and text descriptions of protein properties (e.g., natural language, XML tables or  knowledge graphs).
 
 ### 4. Experimental Installation as Prompts
 
