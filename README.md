@@ -1,2 +1,1 @@
-# PromptProtein
-Prompt Engineering for Proteins 
+# Prompt Engineering for Proteins 
